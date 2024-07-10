@@ -116,7 +116,7 @@
     transition: 0.5s;
 }
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     .about{
         gap: 80px;
         margin: 50px 70px;
