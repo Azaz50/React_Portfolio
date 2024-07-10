@@ -67,19 +67,54 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
-
+/* For tablets and medium screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .footer {
         margin: 50px 70px;
     }
-    .footer-top{
+    .footer-top {
         flex-direction: column;
         gap: 50px;
     }
-    .footer-bottom{
+    .footer-bottom {
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
+    .footer-top-right{
+        gap: 15px;
+    }
+    .footer-email-input input {
+        width: 150px;
+    }
+    .footer-subscribe{
+        padding: 15px 25px;
+    }
+}
 
+/* For mobile phones and smaller screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .footer {
+        margin: 30px 20px;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    .footer-bottom p, .footer-bottom a {
+        text-align: center;
+    }
+    .footer-email-input input {
+        width: 150px;
+    }
+    .footer-subscribe{
+        padding: 15px 25px;
+    }
+   
 }
